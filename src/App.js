@@ -1,13 +1,13 @@
 import './App.css';
 import freeCodeCampLogo from './imagenes/freecodecamp-logo.png';
 import Boton from './componentes/Boton';
+import Contador from './componentes/Contador';
 
 
 function App() {
   
-  const manejarClic= ()=>{
-    console.log('Clickeado');
-  }
+  const manejarClic= ()=> console.log('Clickeado');
+  
 
   const reiniciarContador = ()=>{
     console.log('Lo otro que no es clickear');
@@ -22,16 +22,19 @@ function App() {
         />
       </div>
       <div className='contenedor-principal'>
+        <Contador
+        nClicks='5'
+        />
         <Boton
-        texto='Clic'
-        esBotonClic={true}
-        manejarClic={manejarClic}
+          texto='Clic'
+          esBotonClic={true}
+          manejarClic={manejarClic}
         />
 
         <Boton
-        texto='Reiniciar'
-        esBotonClic={false}
-        manejarClic={reiniciarContador}
+          texto='Reiniciar'
+          esBotonClic={false}
+          manejarClic={reiniciarContador}
         />
 
       </div>
