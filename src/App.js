@@ -2,6 +2,7 @@ import './App.css';
 import freeCodeCampLogo from './imagenes/freecodecamp-logo.png';
 import Boton from './componentes/Boton';
 
+
 function App() {
   
   const manejarClic= ()=>{
